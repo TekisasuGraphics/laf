@@ -1225,6 +1225,14 @@ void WindowX11::processX11Event(XEvent& event)
       break;
     }
 
+    case FocusOut: {
+      if (event.xfocus.mode == NotifyNormal) {
+        Event ev;
+        ev.setType(Event::CancelActions);
+        queueEvent(ev);
+      }
+    }
+
     case MotionNotify: {
       // This can happen when the motion event are handled in XInput
       if (event.xmotion.time == g_lastXInputEventTime)

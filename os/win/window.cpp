@@ -1085,6 +1085,14 @@ LRESULT WindowWin::wndProc(UINT msg, WPARAM wparam, LPARAM lparam)
       }
       break;
 
+    case WM_ACTIVATEAPP:
+      if (!wparam) {
+        Event ev;
+        ev.setType(Event::CancelActions);
+        queueEvent(ev);
+      }
+      break;
+
     case WM_PAINT:
       if (m_isCreated) {
         PAINTSTRUCT ps;

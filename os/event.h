@@ -44,6 +44,11 @@ public:
     // Some files are dropped in the window
     DropFiles,
 
+    // Cancel editor actions. This is useful when switching
+    // applications while a mouse button or key shortcut
+    // is still active.
+    CancelActions,
+
     // Common mouse events
     MouseEnter,
     MouseLeave,
