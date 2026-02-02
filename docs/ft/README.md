@@ -7,8 +7,8 @@ paint text, and a way to create/use sprite sheet-based fonts.
 
 ## API Reference
 
-* [ft::FaceFT](https://github.com/aseprite/laf/blob/main/ft/face.h): FT_Face wrapper
-* [ft::ForEachGlyph](https://github.com/aseprite/laf/blob/main/ft/algorithm.h): Algorithm to iterate each glyph
-* [ft::HBFace](https://github.com/aseprite/laf/blob/main/ft/hb_face.h): hb_font_t wrapper
-* [ft::HBShaper](https://github.com/aseprite/laf/blob/main/ft/hb_shaper.h): hb_shape & hb_buffer wrappers
-* [ft::Lib](https://github.com/aseprite/laf/blob/main/ft/lib.h): FT_Library wrapper
+* [ft::FaceFT](https://github.com/TekisasuGraphics/laf/blob/main/ft/face.h): FT_Face wrapper
+* [ft::ForEachGlyph](https://github.com/TekisasuGraphics/laf/blob/main/ft/algorithm.h): Algorithm to iterate each glyph
+* [ft::HBFace](https://github.com/TekisasuGraphics/laf/blob/main/ft/hb_face.h): hb_font_t wrapper
+* [ft::HBShaper](https://github.com/TekisasuGraphics/laf/blob/main/ft/hb_shaper.h): hb_shape & hb_buffer wrappers
+* [ft::Lib](https://github.com/TekisasuGraphics/laf/blob/main/ft/lib.h): FT_Library wrapper

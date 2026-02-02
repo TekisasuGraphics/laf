@@ -35,7 +35,7 @@ X11::X11()
   // TODO We shouldn't need to call this function (because we
   // shouldn't be using the m_display from different threads), but
   // it might be necessary?
-  // https://github.com/aseprite/aseprite/issues/1962
+  // https://github.com/TekisasuGraphics/aseprite/issues/1962
   XInitThreads();
 
   m_display = XOpenDisplay(nullptr);

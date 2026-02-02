@@ -127,7 +127,7 @@ public:
       // transparent. Before this change we were returning a "no cursor" from makeCursor
       // when the cursor was fully transparent to avoid showing a black bitmap as the
       // cursor. But then the following issue was found:
-      // https://github.com/aseprite/aseprite/issues/3989 (which is about the mouse
+      // https://github.com/TekisasuGraphics/aseprite/issues/3989 (which is about the mouse
       // cursor leaving a trail of cursors after it was switched to a fully transparent
       // cursor bitmap.
       // By filling the mask with ones we fix both, the issue and the black cursor.

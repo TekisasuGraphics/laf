@@ -138,7 +138,7 @@ if(NOT ZLIB_LIBRARIES)
 
   include(ExternalProject)
   ExternalProject_Add(zlib-project
-    GIT_REPOSITORY   https://github.com/aseprite/zlib.git
+    GIT_REPOSITORY   https://github.com/TekisasuGraphics/zlib.git
     GIT_TAG          51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf
     PREFIX           "${CMAKE_CURRENT_BINARY_DIR}/third_party/zlib"
     INSTALL_DIR      "${CMAKE_CURRENT_BINARY_DIR}/third_party/zlib"

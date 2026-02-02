@@ -44,7 +44,7 @@ Compiling in a specific operating system/platforms:
 
 * `LAF_SKIA`: When we compile with `LAF_BACKEND=skia`, Skia library is available
 
-CPU [endianness](https://en.wikipedia.org/wiki/Endianness) (defined in [base/config.h](https://github.com/aseprite/laf/blob/main/base/config.h.cmakein)):
+CPU [endianness](https://en.wikipedia.org/wiki/Endianness) (defined in [base/config.h](https://github.com/TekisasuGraphics/laf/blob/main/base/config.h.cmakein)):
 
 * `LAF_LITTLE_ENDIAN`
 * `LAF_BIG_ENDIAN`
