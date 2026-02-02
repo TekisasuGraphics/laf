@@ -62,7 +62,7 @@ public:
         // Note that the [m_app run] call doesn't block because we are calling
         // [NSApp stop] from [AppDelegateOSX applicationDidFinishLaunching]. We only
         // need the application's initialization done inside run to prevent issues
-        // such as: https://github.com/aseprite/aseprite/issues/4795
+        // such as: https://github.com/TekisasuGraphics/aseprite/issues/4795
         [m_app run];
       }
       else {

@@ -1,6 +1,6 @@
 # LAF: The Lost Application Framework
 
-[![build](https://github.com/aseprite/laf/workflows/build/badge.svg)](https://github.com/aseprite/laf/actions?query=workflow%3Abuild)
+[![build](https://github.com/TekisasuGraphics/laf/workflows/build/badge.svg)](https://github.com/TekisasuGraphics/laf/actions?query=workflow%3Abuild)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
 
 A library to create Windows, macOS, and Linux applications.
@@ -16,8 +16,8 @@ ABI compatibility at this moment.
 
 When `LAF_BACKEND=skia`, *laf* requires a compiled version of the [Skia library](https://skia.org/)
 from branch `aseprite-m124`. You can check the aseprite/skia fork
-which includes a [release with pre-built versions](https://github.com/aseprite/skia/releases), or
-the check the [instructions to compile skia](https://github.com/aseprite/skia#readme) from scratch.
+which includes a [release with pre-built versions](https://github.com/TekisasuGraphics/skia/releases), or
+the check the [instructions to compile skia](https://github.com/TekisasuGraphics/skia#readme) from scratch.
 
 When `LAF_BACKEND=none`, the [Pixman library](http://www.pixman.org/)
 can be used as an alternative implementation of the `gfx::Region` class (generally if
@@ -35,7 +35,7 @@ this case `/skiadir/out/Release-x64` should contain the Skia library
 files, i.e. `skia.lib` on Windows or `libskia.a` on other platforms):
 
 ```
-git clone --recursive https://github.com/aseprite/laf.git
+git clone --recursive https://github.com/TekisasuGraphics/laf.git
 cd laf
 cmake -G Ninja -S . -B build \
   -DLAF_BACKEND=skia \
@@ -69,13 +69,13 @@ ctest
 Some functions in *laf* depends on third party libraries (you should
 include these license notices when you distribute your software):
 
-* Tests use the [Google Test](https://github.com/aseprite/googletest/tree/master/googletest)
+* Tests use the [Google Test](https://github.com/TekisasuGraphics/googletest/tree/master/googletest)
   framework by Google Inc. licensed under
-  [a BSD-like license](https://github.com/aseprite/googletest/blob/master/googletest/LICENSE).
+  [a BSD-like license](https://github.com/TekisasuGraphics/googletest/blob/master/googletest/LICENSE).
 * Color spaces, `gfx::Region`, and the `laf::os` library use code from
   the [Skia library](https://skia.org) by Google Inc. licensed under
-  [a BSD-like license](https://github.com/aseprite/skia/blob/master/LICENSE)
-  and several other [third-party libraries/licenses](https://github.com/aseprite/skia/tree/master/third_party).
+  [a BSD-like license](https://github.com/TekisasuGraphics/skia/blob/master/LICENSE)
+  and several other [third-party libraries/licenses](https://github.com/TekisasuGraphics/skia/tree/master/third_party).
 * `gfx::Region` uses the [Pixman library](http://www.pixman.org/) if
   you are not compiling with the Skia backend on Linux or macOS
   (e.g. if you want to create Command Line utilities that use the
