@@ -2427,6 +2427,14 @@ void WindowWin::checkDarkModeChange()
                             &value,
                             sizeof(BOOL));
     }
+
+    // Tekisasu - Disable Mica backdrop effect on Windows 11
+    // DWMWA_SYSTEMBACKDROP_TYPE = 38, DWMSBT_NONE = 1
+    int backdropType = 1; // DWMSBT_NONE - disable Mica
+    DwmSetWindowAttribute(m_hwnd,
+                          38, // DWMWA_SYSTEMBACKDROP_TYPE,
+                          &backdropType,
+                          sizeof(int));
   }
   catch (const base::Win32Exception&) {
     // Probably the "Personalize" key doesn't exist because we are on
